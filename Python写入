@@ -1,0 +1,17 @@
+
+text='practice write and appended'
+
+
+file=open('GOGO.txt','w')
+#没有文件的话文件默认创建在项目文件夹下面
+#第二个参数‘w’为write，只会写入一次，会覆盖原来的文字
+#‘r’为read，只读不可修改
+
+file.write(text)
+file.close()
+
+text1='add something'
+file=open('GOGO.txt','a')
+#'a'为append追加，可以在文件后面追加内容)
+file.write(text1)
+file.close()
