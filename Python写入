@@ -15,3 +15,11 @@ file=open('GOGO.txt','a')
 #'a'为append追加，可以在文件后面追加内容)
 file.write(text1)
 file.close()
+
+file1=open('GOGO.txt','r')
+content=file1.read()
+#read是直接读取文件内容
+#readline读取文件第一行
+#readlines是读取文件用逗号隔开
+# readlines输出结果：['practice write and appended\n', 'add something\n', 'add something\n', 'add something\n', 'add something\n', 'add something\n', 'add something\n', 'add something']
+print(content)
