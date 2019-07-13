@@ -1,0 +1,50 @@
+class Calculator:       #首字母要大写，冒号不能缺
+    name='Good Calculator'  #该行为class的属性
+    price=18
+    def add(self,x,y):
+        print(self.name)
+        result = x + y
+        print(result)
+    def minus(self,x,y):
+        result=x-y
+        print(result)
+    def times(self,x,y):
+        print(x*y)
+    def divide(self,x,y):
+        print(x/y)
+
+im=Calculator()
+#定义类需要加（）
+print(im.name)
+im.add(3,5)
+
+ 
+
+ 
+init 
+__init__可以理解成初始化class的变量，取自英文中initial 最初的意思.可以在运行时，给初始值附值，
+
+运行c=Calculator('bad calculator',18,17,16,15),然后调出每个初始值的值。看如下代码。
+
+class Calculator:
+    name='good calculator'
+    price=18
+    def __init__(self,name,price,height,width,weight):   # 注意，这里的下划线是双下划线
+        self.name=name
+        self.price=price
+        self.h=height
+        self.wi=width
+        self.we=weight
+""""
+>>> c=Calculator('bad calculator',18,17,16,15)
+>>> c.name
+'bad calculator'
+>>> c.price
+18
+>>> c.h
+17
+>>> c.wi
+16
+>>> c.we
+15
+>>>
